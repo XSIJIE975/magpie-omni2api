@@ -1,0 +1,22 @@
+{
+  "name": "magpie-omni2api",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./opencode.mjs",
+  "description": "Magpie provider plugins for the Lingma and Yunban chat services",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XSIJIE975/magpie-omni2api.git"
+  },
+  "keywords": ["magpie", "magpie-plugin", "lingma", "yunban", "provider"],
+  "files": ["opencode.mjs", "index.mjs", "common", "lingma", "yunban", "assets", "README.md", "LICENSE"],
+  "dependencies": {},
+  "magpie": {
+    "icon": "https://raw.githubusercontent.com/XSIJIE975/magpie-omni2api/main/assets/icon.png",
+    "options": {
+      "lingmaBase": "https://lingma.example.com",
+      "yunbanBase": "https://yunban.example.com"
+    }
+  }
+}
