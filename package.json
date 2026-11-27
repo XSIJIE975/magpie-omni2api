@@ -1,6 +1,6 @@
 {
   "name": "magpie-omni2api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "./opencode.mjs",
   "description": "Magpie provider plugins for the Lingma and Yunban chat services",

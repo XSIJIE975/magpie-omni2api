@@ -32,7 +32,5 @@ jobs:
             echo "tag ${GITHUB_REF_NAME} 与 package.json 的 v$v 不一致"
             exit 1
           fi
+      # 首次发布 0.1.0 用本地登录完成；此后由 Trusted Publisher（OIDC）发布，不需要 token
       - run: npm publish --provenance --access public
-        env:
-          # 首次发布用 NPM_TOKEN；配置 Trusted Publisher 后删掉这一行即可免 token
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
